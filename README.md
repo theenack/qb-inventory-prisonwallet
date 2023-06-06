@@ -3,13 +3,15 @@ Remove prison wallet
 
 Removing the locked 6th slot in lj-inventory or qb-inventory 
 So in qb-core/config.lua edit the max slots from 41 to 40
+Before:
 QBConfig.Player.MaxInvSlots = 41 -- Max inventory slots for a player
-
+After:
 QBConfig.Player.MaxInvSlots = 40 -- Max inventory slots for a player
 
 Also in lj-iventory/config.lua change the max slots from 41 to 40
+Before:
 MaxInventorySlots = 41
-
+After:
 MaxInventorySlots = 40
 
 Also in lj-iventory/html/js/app.js comment out line 2890 to 2892
